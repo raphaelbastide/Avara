@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="igrave" format="1">
-  <advance width="320"/>
-  <unicode hex="00ec"/>
+  <advance width="9"/>
+  <unicode hex="00EC"/>
   <outline>
     <contour>
-      <point x="200" y="600" type="line" smooth="no"/>
-      <point x="160" y="600" type="line" smooth="no"/>
-      <point x="0" y="680" type="line" smooth="no"/>
-      <point x="0" y="720" type="line" smooth="no"/>
-      <point x="40" y="760" type="line" smooth="no"/>
-      <point x="80" y="760" type="line" smooth="no"/>
+      <point x="6" y="16" type="line"/>
+      <point x="5" y="16" type="line"/>
+      <point x="1" y="18" type="line"/>
+      <point x="1" y="19" type="line"/>
+      <point x="2" y="20" type="line"/>
+      <point x="3" y="20" type="line"/>
     </contour>
     <contour>
-      <point x="0" y="480" type="line" smooth="no"/>
-      <point x="200" y="560" type="line" smooth="no"/>
-      <point x="200" y="80" type="line" smooth="no"/>
-      <point x="280" y="0" type="line" smooth="no"/>
-      <point x="0" y="0" type="line" smooth="no"/>
-      <point x="80" y="80" type="line" smooth="no"/>
-      <point x="80" y="440" type="line" smooth="no"/>
+      <point x="1" y="13" type="line"/>
+      <point x="6" y="15" type="line"/>
+      <point x="6" y="2" type="line"/>
+      <point x="8" y="0" type="line"/>
+      <point x="1" y="0" type="line"/>
+      <point x="3" y="2" type="line"/>
+      <point x="3" y="12" type="line"/>
     </contour>
   </outline>
 </glyph>

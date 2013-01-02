@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="J" format="1">
-  <advance width="440"/>
-  <unicode hex="004a"/>
+  <advance width="15"/>
+  <unicode hex="004A"/>
   <outline>
     <contour>
-      <point x="80" y="160" type="line" smooth="no"/>
-      <point x="80" y="80" type="line" smooth="no"/>
-      <point x="120" y="40" type="line" smooth="no"/>
-      <point x="160" y="40" type="line" smooth="no"/>
-      <point x="200" y="120" type="line" smooth="no"/>
-      <point x="200" y="720" type="line" smooth="no"/>
-      <point x="120" y="800" type="line" smooth="no"/>
-      <point x="400" y="800" type="line" smooth="no"/>
-      <point x="320" y="720" type="line" smooth="no"/>
-      <point x="320" y="80" type="line" smooth="no"/>
-      <point x="240" y="0" type="line" smooth="no"/>
-      <point x="80" y="0" type="line" smooth="no"/>
-      <point x="0" y="80" type="line" smooth="no"/>
-      <point x="40" y="200" type="line" smooth="no"/>
+      <point x="5" y="0" type="line"/>
+      <point x="2" y="2" type="line"/>
+      <point x="1" y="5" type="line"/>
+      <point x="4" y="7" type="line"/>
+      <point x="6" y="6" type="line"/>
+      <point x="5" y="3" type="line"/>
+      <point x="6" y="1" type="line"/>
+      <point x="8" y="1" type="line"/>
+      <point x="9" y="3" type="line"/>
+      <point x="9" y="18" type="line"/>
+      <point x="7" y="20" type="line"/>
+      <point x="14" y="20" type="line"/>
+      <point x="12" y="18" type="line"/>
+      <point x="12" y="2" type="line"/>
+      <point x="10" y="0" type="line"/>
     </contour>
   </outline>
 </glyph>

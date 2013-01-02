@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="quotesingle" format="1">
-  <advance width="200"/>
+  <advance width="5"/>
   <unicode hex="0027"/>
   <outline>
     <contour>
-      <point x="40" y="560" type="line" smooth="no"/>
-      <point x="40" y="760" type="line" smooth="no"/>
-      <point x="80" y="800" type="line" smooth="no"/>
-      <point x="120" y="800" type="line" smooth="no"/>
-      <point x="160" y="760" type="line" smooth="no"/>
-      <point x="160" y="720" type="line" smooth="no"/>
-      <point x="80" y="600" type="line" smooth="no"/>
+      <point x="1" y="14" type="line"/>
+      <point x="1" y="19" type="line"/>
+      <point x="2" y="20" type="line"/>
+      <point x="3" y="20" type="line"/>
+      <point x="4" y="19" type="line"/>
+      <point x="4" y="18" type="line"/>
+      <point x="2" y="15" type="line"/>
     </contour>
   </outline>
 </glyph>

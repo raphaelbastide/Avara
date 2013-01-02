@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="f" format="1">
-  <advance width="440"/>
+  <advance width="10"/>
   <unicode hex="0066"/>
   <outline>
     <contour>
-      <point x="200" y="560" type="line" smooth="no"/>
-      <point x="320" y="560" type="line" smooth="no"/>
-      <point x="320" y="520" type="line" smooth="no"/>
-      <point x="280" y="520" type="line" smooth="no"/>
-      <point x="200" y="480" type="line" smooth="no"/>
-      <point x="200" y="80" type="line" smooth="no"/>
-      <point x="280" y="0" type="line" smooth="no"/>
-      <point x="0" y="0" type="line" smooth="no"/>
-      <point x="80" y="80" type="line" smooth="no"/>
-      <point x="80" y="480" type="line" smooth="no"/>
-      <point x="40" y="520" type="line" smooth="no"/>
-      <point x="40" y="560" type="line" smooth="no"/>
-      <point x="80" y="560" type="line" smooth="no"/>
-      <point x="80" y="680" type="line" smooth="no"/>
-      <point x="120" y="760" type="line" smooth="yes"/>
-      <point x="160" y="800" type="line" smooth="no"/>
-      <point x="320" y="840" type="line" smooth="no"/>
-      <point x="400" y="800" type="line" smooth="no"/>
-      <point x="400" y="680" type="line" smooth="yes"/>
-      <point x="360" y="640" type="line" smooth="no"/>
-      <point x="280" y="680" type="line" smooth="no"/>
-      <point x="320" y="760" type="line" smooth="no"/>
-      <point x="240" y="800" type="line" smooth="no"/>
-      <point x="200" y="720" type="line" smooth="no"/>
+      <point x="6" y="14" type="line"/>
+      <point x="9" y="14" type="line"/>
+      <point x="9" y="13" type="line"/>
+      <point x="8" y="13" type="line"/>
+      <point x="6" y="12" type="line"/>
+      <point x="6" y="2" type="line"/>
+      <point x="8" y="0" type="line"/>
+      <point x="1" y="0" type="line"/>
+      <point x="3" y="2" type="line"/>
+      <point x="3" y="12" type="line"/>
+      <point x="2" y="13" type="line"/>
+      <point x="2" y="14" type="line"/>
+      <point x="3" y="14" type="line"/>
+      <point x="3" y="17" type="line"/>
+      <point x="4" y="19" type="line"/>
+      <point x="5" y="20" type="line"/>
+      <point x="9" y="21" type="line"/>
+      <point x="11" y="20" type="line"/>
+      <point x="11" y="17" type="line"/>
+      <point x="10" y="16" type="line"/>
+      <point x="8" y="17" type="line"/>
+      <point x="9" y="19" type="line"/>
+      <point x="8" y="20" type="line"/>
+      <point x="6" y="19" type="line"/>
+      <point x="5" y="17" type="line"/>
     </contour>
   </outline>
 </glyph>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="exclam" format="1">
-  <advance width="240"/>
+  <advance width="6"/>
   <unicode hex="0021"/>
   <outline>
     <contour>
-      <point x="120" y="0" type="line" smooth="no"/>
-      <point x="40" y="40" type="line" smooth="no"/>
-      <point x="40" y="80" type="line" smooth="no"/>
-      <point x="80" y="160" type="line" smooth="no"/>
-      <point x="120" y="160" type="line" smooth="no"/>
-      <point x="200" y="120" type="line" smooth="no"/>
-      <point x="200" y="80" type="line" smooth="no"/>
-      <point x="160" y="0" type="line" smooth="no"/>
+      <point x="3" y="0" type="line"/>
+      <point x="1" y="1" type="line"/>
+      <point x="1" y="2" type="line"/>
+      <point x="2" y="4" type="line"/>
+      <point x="3" y="4" type="line"/>
+      <point x="5" y="3" type="line"/>
+      <point x="5" y="2" type="line"/>
+      <point x="4" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="80" y="800" type="line" smooth="no"/>
-      <point x="160" y="800" type="line" smooth="no"/>
-      <point x="200" y="760" type="line" smooth="no"/>
-      <point x="200" y="640" type="line" smooth="no"/>
-      <point x="160" y="360" type="line" smooth="no"/>
-      <point x="120" y="240" type="line" smooth="no"/>
-      <point x="80" y="360" type="line" smooth="no"/>
-      <point x="40" y="640" type="line" smooth="no"/>
-      <point x="40" y="760" type="line" smooth="no"/>
+      <point x="2" y="20" type="line"/>
+      <point x="4" y="20" type="line"/>
+      <point x="5" y="19" type="line"/>
+      <point x="5" y="16" type="line"/>
+      <point x="4" y="9" type="line"/>
+      <point x="3" y="6" type="line"/>
+      <point x="2" y="9" type="line"/>
+      <point x="1" y="16" type="line"/>
+      <point x="1" y="19" type="line"/>
     </contour>
   </outline>
 </glyph>

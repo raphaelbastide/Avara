@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="idieresis" format="1">
-  <advance width="320"/>
-  <unicode hex="00ef"/>
+  <advance width="9"/>
+  <unicode hex="00EF"/>
   <outline>
     <contour>
-      <point x="240" y="720" type="line" smooth="no"/>
-      <point x="280" y="680" type="line" smooth="no"/>
-      <point x="280" y="640" type="line" smooth="no"/>
-      <point x="240" y="600" type="line" smooth="no"/>
-      <point x="160" y="600" type="line" smooth="no"/>
-      <point x="160" y="680" type="line" smooth="no"/>
-      <point x="200" y="720" type="line" smooth="no"/>
+      <point x="7" y="19" type="line"/>
+      <point x="8" y="18" type="line"/>
+      <point x="8" y="17" type="line"/>
+      <point x="7" y="16" type="line"/>
+      <point x="5" y="16" type="line"/>
+      <point x="5" y="18" type="line"/>
+      <point x="6" y="19" type="line"/>
     </contour>
     <contour>
-      <point x="40" y="720" type="line" smooth="no"/>
-      <point x="80" y="680" type="line" smooth="no"/>
-      <point x="80" y="600" type="line" smooth="no"/>
-      <point x="0" y="600" type="line" smooth="no"/>
-      <point x="-40" y="640" type="line" smooth="no"/>
-      <point x="-40" y="680" type="line" smooth="no"/>
-      <point x="0" y="720" type="line" smooth="no"/>
+      <point x="2" y="19" type="line"/>
+      <point x="3" y="18" type="line"/>
+      <point x="3" y="16" type="line"/>
+      <point x="1" y="16" type="line"/>
+      <point x="0" y="17" type="line"/>
+      <point x="0" y="18" type="line"/>
+      <point x="1" y="19" type="line"/>
     </contour>
     <contour>
-      <point x="0" y="480" type="line" smooth="no"/>
-      <point x="200" y="560" type="line" smooth="no"/>
-      <point x="200" y="80" type="line" smooth="no"/>
-      <point x="280" y="0" type="line" smooth="no"/>
-      <point x="0" y="0" type="line" smooth="no"/>
-      <point x="80" y="80" type="line" smooth="no"/>
-      <point x="80" y="440" type="line" smooth="no"/>
+      <point x="1" y="13" type="line"/>
+      <point x="6" y="15" type="line"/>
+      <point x="6" y="2" type="line"/>
+      <point x="8" y="0" type="line"/>
+      <point x="1" y="0" type="line"/>
+      <point x="3" y="2" type="line"/>
+      <point x="3" y="12" type="line"/>
     </contour>
   </outline>
 </glyph>

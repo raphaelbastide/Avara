@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="comma" format="1">
-  <advance width="240"/>
-  <unicode hex="002c"/>
+  <advance width="6"/>
+  <unicode hex="002C"/>
   <outline>
     <contour>
-      <point x="120" y="-120" type="line" smooth="no"/>
-      <point x="0" y="-120" type="line" smooth="no"/>
-      <point x="0" y="-80" type="line" smooth="no"/>
-      <point x="80" y="-80" type="line" smooth="no"/>
-      <point x="120" y="0" type="line" smooth="no"/>
-      <point x="40" y="40" type="line" smooth="no"/>
-      <point x="40" y="80" type="line" smooth="no"/>
-      <point x="80" y="160" type="line" smooth="no"/>
-      <point x="120" y="160" type="line" smooth="no"/>
-      <point x="200" y="120" type="line" smooth="no"/>
-      <point x="200" y="40" type="line" smooth="no"/>
+      <point x="3" y="-3" type="line"/>
+      <point x="0" y="-3" type="line"/>
+      <point x="0" y="-2" type="line"/>
+      <point x="2" y="-2" type="line"/>
+      <point x="3" y="0" type="line"/>
+      <point x="1" y="1" type="line"/>
+      <point x="1" y="2" type="line"/>
+      <point x="2" y="4" type="line"/>
+      <point x="3" y="4" type="line"/>
+      <point x="5" y="3" type="line"/>
+      <point x="5" y="1" type="line"/>
     </contour>
   </outline>
 </glyph>

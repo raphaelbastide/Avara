@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="k" format="1">
-  <advance width="640"/>
-  <unicode hex="006b"/>
+  <advance width="16"/>
+  <unicode hex="006B"/>
   <outline>
     <contour>
-      <point x="0" y="760" type="line" smooth="no"/>
-      <point x="200" y="840" type="line" smooth="no"/>
-      <point x="200" y="280" type="line" smooth="no"/>
-      <point x="400" y="480" type="line" smooth="no"/>
-      <point x="320" y="560" type="line" smooth="no"/>
-      <point x="560" y="560" type="line" smooth="no"/>
-      <point x="472" y="480" type="line" smooth="no"/>
-      <point x="360" y="360" type="line" smooth="no"/>
-      <point x="560" y="80" type="line" smooth="no"/>
-      <point x="600" y="0" type="line" smooth="no"/>
-      <point x="480" y="0" type="line" smooth="no"/>
-      <point x="440" y="40" type="line" smooth="no"/>
-      <point x="280" y="280" type="line" smooth="no"/>
-      <point x="200" y="200" type="line" smooth="no"/>
-      <point x="200" y="80" type="line" smooth="no"/>
-      <point x="280" y="0" type="line" smooth="no"/>
-      <point x="0" y="0" type="line" smooth="no"/>
-      <point x="80" y="80" type="line" smooth="no"/>
-      <point x="80" y="720" type="line" smooth="no"/>
+      <point x="1" y="19" type="line"/>
+      <point x="6" y="21" type="line"/>
+      <point x="6" y="7" type="line"/>
+      <point x="11" y="12" type="line"/>
+      <point x="9" y="14" type="line"/>
+      <point x="15" y="14" type="line"/>
+      <point x="13" y="12" type="line"/>
+      <point x="10" y="9" type="line"/>
+      <point x="15" y="2" type="line"/>
+      <point x="16" y="0" type="line"/>
+      <point x="13" y="0" type="line"/>
+      <point x="12" y="1" type="line"/>
+      <point x="8" y="7" type="line"/>
+      <point x="6" y="5" type="line"/>
+      <point x="6" y="2" type="line"/>
+      <point x="8" y="0" type="line"/>
+      <point x="1" y="0" type="line"/>
+      <point x="3" y="2" type="line"/>
+      <point x="3" y="18" type="line"/>
     </contour>
   </outline>
 </glyph>

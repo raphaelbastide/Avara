@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="I" format="1">
-  <advance width="320"/>
+  <advance width="9"/>
   <unicode hex="0049"/>
   <outline>
     <contour>
-      <point x="200" y="80" type="line" smooth="no"/>
-      <point x="280" y="0" type="line" smooth="no"/>
-      <point x="0" y="0" type="line" smooth="no"/>
-      <point x="80" y="80" type="line" smooth="no"/>
-      <point x="80" y="720" type="line" smooth="no"/>
-      <point x="0" y="800" type="line" smooth="no"/>
-      <point x="280" y="800" type="line" smooth="no"/>
-      <point x="200" y="720" type="line" smooth="no"/>
+      <point x="6" y="2" type="line"/>
+      <point x="8" y="0" type="line"/>
+      <point x="1" y="0" type="line"/>
+      <point x="3" y="2" type="line"/>
+      <point x="3" y="18" type="line"/>
+      <point x="1" y="20" type="line"/>
+      <point x="8" y="20" type="line"/>
+      <point x="6" y="18" type="line"/>
     </contour>
   </outline>
 </glyph>
