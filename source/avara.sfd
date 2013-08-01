@@ -55,359 +55,10 @@ OS2CodePages: 00000001.00000000
 OS2UnicodeRanges: 00000003.00000000.00000000.00000000
 DEI: 91125
 TtTable: prep
-PUSHW_1
- 0
-CALL
+
 EndTTInstrs
 TtTable: fpgm
-PUSHW_1
- 0
-FDEF
-MPPEM
-PUSHW_1
- 8
-LT
-IF
-PUSHB_2
- 1
- 1
-INSTCTRL
-EIF
-PUSHW_1
- 511
-SCANCTRL
-PUSHW_1
- 68
-SCVTCI
-PUSHW_2
- 8
- 3
-SDS
-SDB
-ENDF
-PUSHW_1
- 1
-FDEF
-DUP
-DUP
-RCVT
-ROUND[Black]
-WCVTP
-PUSHB_1
- 1
-ADD
-ENDF
-PUSHW_1
- 2
-FDEF
-PUSHW_1
- 1
-LOOPCALL
-POP
-ENDF
-PUSHW_1
- 3
-FDEF
-DUP
-GC[cur]
-PUSHB_1
- 3
-CINDEX
-GC[cur]
-GT
-IF
-SWAP
-EIF
-DUP
-ROLL
-DUP
-ROLL
-MD[grid]
-ABS
-ROLL
-DUP
-GC[cur]
-DUP
-ROUND[Grey]
-SUB
-ABS
-PUSHB_1
- 4
-CINDEX
-GC[cur]
-DUP
-ROUND[Grey]
-SUB
-ABS
-GT
-IF
-SWAP
-NEG
-ROLL
-EIF
-MDAP[rnd]
-DUP
-PUSHB_1
- 0
-GTEQ
-IF
-ROUND[Black]
-DUP
-PUSHB_1
- 0
-EQ
-IF
-POP
-PUSHB_1
- 64
-EIF
-ELSE
-ROUND[Black]
-DUP
-PUSHB_1
- 0
-EQ
-IF
-POP
-PUSHB_1
- 64
-NEG
-EIF
-EIF
-MSIRP[no-rp0]
-ENDF
-PUSHW_1
- 4
-FDEF
-DUP
-GC[cur]
-PUSHB_1
- 4
-CINDEX
-GC[cur]
-GT
-IF
-SWAP
-ROLL
-EIF
-DUP
-GC[cur]
-DUP
-ROUND[White]
-SUB
-ABS
-PUSHB_1
- 4
-CINDEX
-GC[cur]
-DUP
-ROUND[White]
-SUB
-ABS
-GT
-IF
-SWAP
-ROLL
-EIF
-MDAP[rnd]
-MIRP[rp0,min,rnd,black]
-ENDF
-PUSHW_1
- 5
-FDEF
-MPPEM
-DUP
-PUSHB_1
- 3
-MINDEX
-LT
-IF
-LTEQ
-IF
-PUSHB_1
- 128
-WCVTP
-ELSE
-PUSHB_1
- 64
-WCVTP
-EIF
-ELSE
-POP
-POP
-DUP
-RCVT
-PUSHB_1
- 192
-LT
-IF
-PUSHB_1
- 192
-WCVTP
-ELSE
-POP
-EIF
-EIF
-ENDF
-PUSHW_1
- 6
-FDEF
-DUP
-DUP
-RCVT
-ROUND[Black]
-WCVTP
-PUSHB_1
- 1
-ADD
-DUP
-DUP
-RCVT
-RDTG
-ROUND[Black]
-RTG
-WCVTP
-PUSHB_1
- 1
-ADD
-ENDF
-PUSHW_1
- 7
-FDEF
-PUSHW_1
- 6
-LOOPCALL
-ENDF
-PUSHW_1
- 8
-FDEF
-MPPEM
-DUP
-PUSHB_1
- 3
-MINDEX
-GTEQ
-IF
-PUSHB_1
- 64
-ELSE
-PUSHB_1
- 0
-EIF
-ROLL
-ROLL
-DUP
-PUSHB_1
- 3
-MINDEX
-GTEQ
-IF
-SWAP
-POP
-PUSHB_1
- 128
-ROLL
-ROLL
-ELSE
-ROLL
-SWAP
-EIF
-DUP
-PUSHB_1
- 3
-MINDEX
-GTEQ
-IF
-SWAP
-POP
-PUSHW_1
- 192
-ROLL
-ROLL
-ELSE
-ROLL
-SWAP
-EIF
-DUP
-PUSHB_1
- 3
-MINDEX
-GTEQ
-IF
-SWAP
-POP
-PUSHW_1
- 256
-ROLL
-ROLL
-ELSE
-ROLL
-SWAP
-EIF
-DUP
-PUSHB_1
- 3
-MINDEX
-GTEQ
-IF
-SWAP
-POP
-PUSHW_1
- 320
-ROLL
-ROLL
-ELSE
-ROLL
-SWAP
-EIF
-DUP
-PUSHW_1
- 3
-MINDEX
-GTEQ
-IF
-PUSHB_1
- 3
-CINDEX
-RCVT
-PUSHW_1
- 384
-LT
-IF
-SWAP
-POP
-PUSHW_1
- 384
-SWAP
-POP
-ELSE
-PUSHB_1
- 3
-CINDEX
-RCVT
-SWAP
-POP
-SWAP
-POP
-EIF
-ELSE
-POP
-EIF
-WCVTP
-ENDF
-PUSHW_1
- 9
-FDEF
-MPPEM
-GTEQ
-IF
-RCVT
-WCVTP
-ELSE
-POP
-POP
-EIF
-ENDF
+
 EndTTInstrs
 ShortTable: maxp 16
   1
@@ -443,61 +94,6 @@ StartChar: .notdef
 Encoding: 65536 -1 0
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 5
-MDAP[rnd]
-PUSHW_1
- 8
-SRP0
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 3
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 4
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 7
- 0
- 3
-SRP1
-SRP2
-IP
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_3
- 2
- 6
- 3
-CALL
-PUSHW_3
- 4
- 0
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -518,36 +114,6 @@ StartChar: R
 Encoding: 82 82 1
 Width: 19
 Flags: W
-TtInstrs:
-PUSHW_3
- 13
- 16
- 3
-CALL
-PUSHW_1
- 13
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 14
-MDAP[rnd]
-PUSHW_3
- 1
- 25
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -586,32 +152,6 @@ StartChar: B
 Encoding: 66 66 2
 Width: 20
 Flags: W
-TtInstrs:
-PUSHW_3
- 22
- 11
- 3
-CALL
-PUSHW_1
- 22
-SRP0
-PUSHW_1
- 14
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_3
- 24
- 9
- 3
-CALL
-PUSHW_3
- 1
- 20
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -654,128 +194,6 @@ StartChar: a
 Encoding: 97 97 3
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_1
- 25
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 25
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,grey]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_1
- 21
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 21
- 38
- 21
- 54
- 21
- 70
- 21
- 86
- 21
- 102
- 21
- 118
- 21
- 134
- 21
- 150
- 21
- 166
- 21
- 182
- 21
- 198
- 21
- 214
- 21
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 21
- 245
- 21
- 2
-DELTAP1
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 3
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 13
-MDRP[rp0,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 16
-MDRP[rp0,grey]
-PUSHW_1
- 11
-SRP0
-PUSHW_1
- 18
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,grey]
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 26
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_3
- 12
- 6
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -813,176 +231,6 @@ StartChar: edieresis
 Encoding: 235 235 4
 Width: 15
 Flags: W
-TtInstrs:
-PUSHW_1
- 37
-MDAP[rnd]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 37
-SRP0
-PUSHW_1
- 14
-MDRP[rp0,grey]
-PUSHW_1
- 14
-MDAP[rnd]
-PUSHW_1
- 13
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 13
- 38
- 13
- 54
- 13
- 70
- 13
- 86
- 13
- 102
- 13
- 118
- 13
- 134
- 13
- 150
- 13
- 166
- 13
- 182
- 13
- 198
- 13
- 214
- 13
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 13
- 245
- 13
- 2
-DELTAP1
-PUSHW_1
- 0
-MDRP[rp0,grey]
-NPUSHW
- 5
- 234
- 1
- 250
- 1
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 1
- 41
- 1
- 57
- 1
- 73
- 1
- 89
- 1
- 105
- 1
- 121
- 1
- 137
- 1
- 153
- 1
- 169
- 1
- 185
- 1
- 201
- 1
- 217
- 1
- 13
-DELTAP1
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 2
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,grey]
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 17
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 24
-MDRP[rp0,grey]
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 27
-MDRP[rp0,grey]
-PUSHW_1
- 13
-SRP0
-PUSHW_1
- 31
-MDRP[rp0,grey]
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 34
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 38
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_3
- 23
- 26
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1034,168 +282,6 @@ StartChar: g
 Encoding: 103 103 5
 Width: 15
 Flags: W
-TtInstrs:
-PUSHW_1
- 46
-MDAP[rnd]
-PUSHW_1
- 3
-MDAP[rnd]
-NPUSHW
- 5
- 234
- 3
- 250
- 3
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 3
- 41
- 3
- 57
- 3
- 73
- 3
- 89
- 3
- 105
- 3
- 121
- 3
- 137
- 3
- 153
- 3
- 169
- 3
- 185
- 3
- 201
- 3
- 217
- 3
- 13
-DELTAP1
-PUSHW_1
- 2
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,grey]
-PUSHW_1
- 46
-SRP0
-PUSHW_1
- 16
-MDRP[rp0,grey]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_1
- 23
-MDRP[rp0,grey]
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 28
-MDRP[rp0,grey]
-PUSHW_1
- 16
-SRP0
-PUSHW_1
- 40
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 40
- 38
- 40
- 54
- 40
- 70
- 40
- 86
- 40
- 102
- 40
- 118
- 40
- 134
- 40
- 150
- 40
- 166
- 40
- 182
- 40
- 198
- 40
- 214
- 40
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 40
- 245
- 40
- 2
-DELTAP1
-PUSHW_1
- 32
-MDRP[rp0,grey]
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 43
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 47
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 26
-MDAP[rnd]
-PUSHW_1
- 13
-MDAP[rnd]
-PUSHW_1
- 25
-MDAP[rnd]
-PUSHW_1
- 28
-MDAP[rnd]
-PUSHW_1
- 30
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1255,40 +341,6 @@ StartChar: t
 Encoding: 116 116 6
 Width: 10
 Flags: W
-TtInstrs:
-PUSHW_3
- 5
- 11
- 3
-CALL
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 0
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_3
- 2
- 3
- 3
-CALL
-PUSHW_3
- 11
- 9
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1318,38 +370,6 @@ StartChar: p
 Encoding: 112 112 7
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 8
- 11
- 3
-CALL
-PUSHW_1
- 8
-SRP0
-PUSHW_1
- 18
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 14
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_3
- 22
- 9
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1387,24 +407,6 @@ StartChar: o
 Encoding: 111 111 8
 Width: 16
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_3
- 17
- 6
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1437,25 +439,6 @@ StartChar: r
 Encoding: 114 114 9
 Width: 13
 Flags: W
-TtInstrs:
-PUSHW_3
- 10
- 13
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_1
- 11
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1483,19 +466,6 @@ StartChar: s
 Encoding: 115 115 10
 Width: 13
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_3
- 22
- 1
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1531,55 +501,6 @@ StartChar: u
 Encoding: 117 117 11
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_1
- 21
-MDAP[rnd]
-PUSHW_1
- 2
-MDAP[rnd]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,grey]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 11
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 15
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 22
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_3
- 19
- 1
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1612,24 +533,6 @@ StartChar: e
 Encoding: 101 101 12
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_3
- 4
- 12
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1665,14 +568,6 @@ StartChar: i
 Encoding: 105 105 13
 Width: 9
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 10
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1700,59 +595,6 @@ StartChar: h
 Encoding: 104 104 14
 Width: 18
 Flags: W
-TtInstrs:
-PUSHW_1
- 22
-MDAP[rnd]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_1
- 22
-SRP0
-PUSHW_1
- 20
-MDRP[rp0,grey]
-PUSHW_1
- 20
-MDAP[rnd]
-PUSHW_1
- 15
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 1
-MDRP[rp0,grey]
-PUSHW_1
- 10
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 20
-SRP0
-PUSHW_1
- 18
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 23
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_1
- 18
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1786,19 +628,6 @@ StartChar: l
 Encoding: 108 108 15
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 2
- 5
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 3
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -1817,163 +646,6 @@ StartChar: m
 Encoding: 109 109 16
 Width: 26
 Flags: W
-TtInstrs:
-PUSHW_1
- 32
-MDAP[rnd]
-PUSHW_1
- 1
-MDRP[rp0,grey]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 30
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 5
-MDRP[rp0,grey]
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 25
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 3
- 80
- 25
- 1
-DELTAP1
-NPUSHW
- 3
- 79
- 25
- 1
-DELTAP1
-NPUSHW
- 3
- 175
- 25
- 1
-DELTAP1
-NPUSHW
- 3
- 208
- 25
- 1
-DELTAP1
-NPUSHW
- 3
- 0
- 25
- 1
-DELTAP2
-PUSHW_1
- 22
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 9
-MDRP[rp0,grey]
-PUSHW_1
- 25
-SRP0
-PUSHW_1
- 17
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 3
- 0
- 17
- 1
-DELTAP2
-NPUSHW
- 3
- 79
- 17
- 1
-DELTAP1
-NPUSHW
- 3
- 175
- 17
- 1
-DELTAP1
-NPUSHW
- 3
- 80
- 17
- 1
-DELTAP1
-NPUSHW
- 3
- 208
- 17
- 1
-DELTAP1
-PUSHW_1
- 14
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 21
- 25
- 17
-SRP1
-SRP2
-IP
-PUSHW_3
- 29
- 1
- 25
-SRP1
-SRP2
-IP
-PUSHW_1
- 33
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 15
-MDAP[rnd]
-PUSHW_1
- 23
-MDAP[rnd]
-PUSHW_3
- 13
- 0
- 4
-SRP1
-SRP2
-IP
-PUSHW_3
- 21
- 0
- 4
-SRP1
-SRP2
-IP
-PUSHW_3
- 29
- 0
- 4
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2017,67 +689,6 @@ StartChar: n
 Encoding: 110 110 17
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_1
- 20
-MDAP[rnd]
-PUSHW_1
- 13
-MDAP[rnd]
-PUSHW_1
- 20
-SRP0
-PUSHW_1
- 1
-MDRP[rp0,grey]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 18
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 5
-MDRP[rp0,grey]
-PUSHW_1
- 13
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 21
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_3
- 9
- 0
- 4
-SRP1
-SRP2
-IP
-PUSHW_3
- 17
- 0
- 4
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2109,44 +720,6 @@ StartChar: q
 Encoding: 113 113 18
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 2
- 5
- 3
-CALL
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 23
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 27
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 13
-MDAP[rnd]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_3
- 23
- 3
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2185,40 +758,6 @@ StartChar: d
 Encoding: 100 100 19
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 1
- 6
- 3
-CALL
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 15
-MDRP[rp0,grey]
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 24
-MDRP[rp0,grey]
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 28
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2258,56 +797,6 @@ StartChar: at
 Encoding: 64 64 20
 Width: 20
 Flags: W
-TtInstrs:
-PUSHW_3
- 12
- 27
- 3
-CALL
-PUSHW_1
- 12
-SRP0
-PUSHW_1
- 42
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_1
- 38
-MDAP[rnd]
-PUSHW_3
- 11
- 38
- 9
-SRP1
-SRP2
-IP
-PUSHW_3
- 27
- 38
- 9
-SRP1
-SRP2
-IP
-PUSHW_3
- 35
- 38
- 9
-SRP1
-SRP2
-IP
-PUSHW_3
- 37
- 38
- 9
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2361,28 +850,6 @@ StartChar: b
 Encoding: 98 98 21
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 2
- 0
- 3
-CALL
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 17
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_1
- 14
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2419,74 +886,6 @@ StartChar: j
 Encoding: 106 106 22
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 11
- 6
- 3
-CALL
-NPUSHW
- 27
- 22
- 11
- 38
- 11
- 54
- 11
- 70
- 11
- 86
- 11
- 102
- 11
- 118
- 11
- 134
- 11
- 150
- 11
- 166
- 11
- 182
- 11
- 198
- 11
- 214
- 11
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 11
- 245
- 11
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_3
- 1
- 4
- 18
-SRP1
-SRP2
-IP
-PUSHW_3
- 13
- 4
- 18
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2522,60 +921,6 @@ StartChar: c
 Encoding: 99 99 23
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_3
- 4
- 14
- 3
-CALL
-NPUSHW
- 27
- 22
- 4
- 38
- 4
- 54
- 4
- 70
- 4
- 86
- 4
- 102
- 4
- 118
- 4
- 134
- 4
- 150
- 4
- 166
- 4
- 182
- 4
- 198
- 4
- 214
- 4
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 4
- 245
- 4
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_1
- 17
-MDAP[rnd]
-PUSHW_1
- 11
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2609,17 +954,6 @@ StartChar: period
 Encoding: 46 46 24
 Width: 5
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_1
- 0
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2639,46 +973,6 @@ StartChar: A
 Encoding: 65 65 25
 Width: 19
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 2
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_3
- 13
- 14
- 3
-CALL
-PUSHW_3
- 0
- 2
- 7
-SRP1
-SRP2
-IP
-PUSHW_3
- 4
- 2
- 7
-SRP1
-SRP2
-IP
-PUSHW_3
- 11
- 2
- 7
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2707,19 +1001,6 @@ StartChar: C
 Encoding: 67 67 26
 Width: 20
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_3
- 16
- 22
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2757,26 +1038,6 @@ StartChar: D
 Encoding: 68 68 27
 Width: 21
 Flags: W
-TtInstrs:
-PUSHW_3
- 17
- 9
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_3
- 19
- 7
- 3
-CALL
-PUSHW_3
- 1
- 14
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2811,49 +1072,6 @@ StartChar: E
 Encoding: 69 69 28
 Width: 18
 Flags: W
-TtInstrs:
-PUSHW_3
- 20
- 3
- 3
-CALL
-PUSHW_1
- 20
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_3
- 0
- 1
- 3
-CALL
-PUSHW_3
- 6
- 9
- 3
-CALL
-PUSHW_3
- 14
- 17
- 3
-CALL
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 22
-MDRP[rp0,min,rnd,grey]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2889,41 +1107,6 @@ StartChar: F
 Encoding: 70 70 29
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 18
- 1
- 3
-CALL
-PUSHW_1
- 18
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_3
- 4
- 7
- 3
-CALL
-PUSHW_3
- 12
- 15
- 3
-CALL
-PUSHW_1
- 4
-SRP0
-PUSHW_1
- 5
-MDRP[rp0,min,rnd,grey]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -2955,33 +1138,6 @@ StartChar: G
 Encoding: 71 71 30
 Width: 22
 Flags: W
-TtInstrs:
-PUSHW_3
- 8
- 3
- 3
-CALL
-PUSHW_1
- 8
-SRP0
-PUSHW_1
- 29
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_3
- 18
- 24
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3021,61 +1177,6 @@ StartChar: H
 Encoding: 72 72 31
 Width: 21
 Flags: W
-TtInstrs:
-PUSHW_1
- 24
-MDAP[rnd]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_1
- 24
-SRP0
-PUSHW_1
- 21
-MDRP[rp0,grey]
-PUSHW_1
- 21
-MDAP[rnd]
-PUSHW_1
- 18
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 1
-MDRP[rp0,grey]
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 13
-MDRP[rp0,grey]
-PUSHW_1
- 9
-SRP0
-PUSHW_1
- 25
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_3
- 4
- 15
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3111,19 +1212,6 @@ StartChar: I
 Encoding: 73 73 32
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 0
- 3
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 5
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3143,30 +1231,6 @@ StartChar: J
 Encoding: 74 74 33
 Width: 15
 Flags: W
-TtInstrs:
-PUSHW_3
- 13
- 8
- 3
-CALL
-PUSHW_1
- 13
-SRP0
-PUSHW_1
- 16
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_3
- 6
- 0
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3193,28 +1257,6 @@ StartChar: K
 Encoding: 75 75 34
 Width: 20
 Flags: W
-TtInstrs:
-PUSHW_3
- 6
- 9
- 3
-CALL
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 13
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3247,24 +1289,6 @@ StartChar: L
 Encoding: 76 76 35
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 7
- 2
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_3
- 9
- 0
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3289,22 +1313,6 @@ StartChar: f
 Encoding: 102 102 36
 Width: 10
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_3
- 1
- 2
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3341,116 +1349,6 @@ StartChar: M
 Encoding: 77 77 37
 Width: 25
 Flags: W
-TtInstrs:
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 18
-SRP0
-PUSHW_1
- 14
-MDRP[rp0,grey]
-PUSHW_1
- 14
-MDAP[rnd]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 4
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 0
- 14
- 4
-SRP1
-SRP2
-IP
-PUSHW_3
- 9
- 14
- 4
-SRP1
-SRP2
-IP
-PUSHW_3
- 10
- 14
- 4
-SRP1
-SRP2
-IP
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 17
- 14
- 4
-SRP1
-SRP2
-IP
-PUSHW_1
- 4
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_3
- 0
- 9
- 1
-SRP1
-SRP2
-IP
-PUSHW_3
- 3
- 9
- 1
-SRP1
-SRP2
-IP
-PUSHW_3
- 8
- 9
- 1
-SRP1
-SRP2
-IP
-PUSHW_3
- 10
- 9
- 1
-SRP1
-SRP2
-IP
-PUSHW_3
- 14
- 9
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3480,102 +1378,6 @@ StartChar: N
 Encoding: 78 78 38
 Width: 21
 Flags: W
-TtInstrs:
-PUSHW_1
- 15
-MDAP[rnd]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 0
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 15
-SRP0
-PUSHW_1
- 6
-MDRP[rp0,grey]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_3
- 2
- 6
- 0
-SRP1
-SRP2
-IP
-PUSHW_1
- 3
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 9
- 6
- 0
-SRP1
-SRP2
-IP
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,grey]
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 16
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_3
- 1
- 0
- 8
-SRP1
-SRP2
-IP
-PUSHW_3
- 2
- 0
- 8
-SRP1
-SRP2
-IP
-PUSHW_3
- 6
- 0
- 8
-SRP1
-SRP2
-IP
-PUSHW_3
- 10
- 0
- 8
-SRP1
-SRP2
-IP
-PUSHW_3
- 14
- 0
- 8
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3602,14 +1404,6 @@ StartChar: O
 Encoding: 79 79 39
 Width: 24
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 18
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3646,30 +1440,6 @@ StartChar: P
 Encoding: 80 80 40
 Width: 19
 Flags: W
-TtInstrs:
-PUSHW_3
- 1
- 4
- 3
-CALL
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 13
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 2
-MDAP[rnd]
-PUSHW_3
- 7
- 19
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3702,29 +1472,6 @@ StartChar: Q
 Encoding: 81 81 41
 Width: 24
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 31
-MDAP[rnd]
-PUSHW_3
- 16
- 21
- 3
-CALL
-PUSHW_3
- 11
- 24
- 3
-CALL
-PUSHW_3
- 0
- 13
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3782,64 +1529,6 @@ StartChar: S
 Encoding: 83 83 42
 Width: 18
 Flags: W
-TtInstrs:
-PUSHW_3
- 12
- 8
- 3
-CALL
-NPUSHW
- 27
- 22
- 12
- 38
- 12
- 54
- 12
- 70
- 12
- 86
- 12
- 102
- 12
- 118
- 12
- 134
- 12
- 150
- 12
- 166
- 12
- 182
- 12
- 198
- 12
- 214
- 12
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 12
- 245
- 12
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_3
- 14
- 6
- 3
-CALL
-PUSHW_3
- 23
- 29
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3884,25 +1573,6 @@ StartChar: T
 Encoding: 84 84 43
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 4
- 7
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_1
- 15
-MDAP[rnd]
-PUSHW_1
- 13
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -3930,47 +1600,6 @@ StartChar: U
 Encoding: 85 85 44
 Width: 21
 Flags: W
-TtInstrs:
-PUSHW_1
- 23
-MDAP[rnd]
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_1
- 0
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 23
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,grey]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 12
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 5
-MDRP[rp0,grey]
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 24
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_1
- 20
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4005,34 +1634,6 @@ StartChar: V
 Encoding: 86 86 45
 Width: 19
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 5
-MDAP[rnd]
-PUSHW_3
- 3
- 5
- 1
-SRP1
-SRP2
-IP
-PUSHW_3
- 10
- 5
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4055,51 +1656,6 @@ StartChar: W
 Encoding: 87 87 46
 Width: 26
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_3
- 1
- 7
- 3
-SRP1
-SRP2
-IP
-PUSHW_3
- 5
- 7
- 3
-SRP1
-SRP2
-IP
-PUSHW_3
- 8
- 7
- 3
-SRP1
-SRP2
-IP
-PUSHW_3
- 15
- 7
- 3
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4128,17 +1684,6 @@ StartChar: X
 Encoding: 88 88 47
 Width: 21
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4170,22 +1715,6 @@ StartChar: Y
 Encoding: 89 89 48
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 8
- 11
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 14
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4214,48 +1743,6 @@ StartChar: Z
 Encoding: 90 90 49
 Width: 20
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_3
- 1
- 5
- 3
-CALL
-PUSHW_3
- 14
- 8
- 3
-CALL
-PUSHW_3
- 3
- 4
- 12
-SRP1
-SRP2
-IP
-PUSHW_3
- 7
- 4
- 12
-SRP1
-SRP2
-IP
-PUSHW_3
- 11
- 4
- 12
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4283,28 +1770,6 @@ StartChar: k
 Encoding: 107 107 50
 Width: 16
 Flags: W
-TtInstrs:
-PUSHW_3
- 14
- 17
- 3
-CALL
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 1
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_1
- 15
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4335,34 +1800,6 @@ StartChar: v
 Encoding: 118 118 51
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_3
- 6
- 0
- 3
-SRP1
-SRP2
-IP
-PUSHW_3
- 10
- 0
- 3
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4386,58 +1823,6 @@ StartChar: w
 Encoding: 119 119 52
 Width: 23
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 5
-MDAP[rnd]
-PUSHW_1
- 13
-MDAP[rnd]
-PUSHW_1
- 2
-MDAP[rnd]
-PUSHW_1
- 17
-MDAP[rnd]
-PUSHW_3
- 0
- 2
- 5
-SRP1
-SRP2
-IP
-PUSHW_3
- 8
- 2
- 5
-SRP1
-SRP2
-IP
-PUSHW_3
- 10
- 2
- 5
-SRP1
-SRP2
-IP
-PUSHW_3
- 11
- 2
- 5
-SRP1
-SRP2
-IP
-PUSHW_3
- 15
- 2
- 5
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4468,37 +1853,6 @@ StartChar: x
 Encoding: 120 120 53
 Width: 17
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_3
- 8
- 1
- 11
-SRP1
-SRP2
-IP
-PUSHW_3
- 18
- 1
- 11
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4530,41 +1884,6 @@ StartChar: y
 Encoding: 121 121 54
 Width: 14
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 2
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_3
- 5
- 10
- 2
-SRP1
-SRP2
-IP
-PUSHW_3
- 9
- 10
- 2
-SRP1
-SRP2
-IP
-PUSHW_3
- 11
- 10
- 2
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4588,40 +1907,6 @@ StartChar: z
 Encoding: 122 122 55
 Width: 14
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_3
- 3
- 4
- 3
-CALL
-PUSHW_3
- 12
- 7
- 3
-CALL
-PUSHW_1
- 4
-SRP0
-PUSHW_1
- 1
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 6
- 4
- 3
-SRP1
-SRP2
-IP
-PUSHW_1
- 12
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,min,rnd,grey]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4647,28 +1932,6 @@ StartChar: one
 Encoding: 49 49 56
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 2
- 4
- 3
-CALL
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 5
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 3
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4690,21 +1953,6 @@ StartChar: two
 Encoding: 50 50 57
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_3
- 13
- 16
- 3
-CALL
-PUSHW_3
- 4
- 24
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4741,70 +1989,6 @@ StartChar: three
 Encoding: 51 51 58
 Width: 16
 Flags: W
-TtInstrs:
-PUSHW_3
- 3
- 14
- 3
-CALL
-NPUSHW
- 5
- 234
- 14
- 250
- 14
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 14
- 41
- 14
- 57
- 14
- 73
- 14
- 89
- 14
- 105
- 14
- 121
- 14
- 137
- 14
- 153
- 14
- 169
- 14
- 185
- 14
- 201
- 14
- 217
- 14
- 13
-DELTAP1
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 36
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_3
- 12
- 5
- 3
-CALL
-PUSHW_3
- 30
- 25
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4851,49 +2035,6 @@ StartChar: four
 Encoding: 52 52 59
 Width: 16
 Flags: W
-TtInstrs:
-PUSHW_3
- 5
- 4
- 3
-CALL
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 0
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 1
- 4
- 5
-SRP1
-SRP2
-IP
-SVTCA[y-axis]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_3
- 7
- 8
- 3
-CALL
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 8
-SRP0
-PUSHW_1
- 14
-MDRP[rp0,grey]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -4922,75 +2063,6 @@ StartChar: five
 Encoding: 53 53 60
 Width: 16
 Flags: W
-TtInstrs:
-PUSHW_3
- 7
- 18
- 3
-CALL
-NPUSHW
- 5
- 234
- 18
- 250
- 18
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 18
- 41
- 18
- 57
- 18
- 73
- 18
- 89
- 18
- 105
- 18
- 121
- 18
- 137
- 18
- 153
- 18
- 169
- 18
- 185
- 18
- 201
- 18
- 217
- 18
- 13
-DELTAP1
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 26
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_3
- 16
- 9
- 3
-CALL
-PUSHW_3
- 24
- 0
- 3
-CALL
-PUSHW_3
- 3
- 21
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5027,62 +2099,6 @@ StartChar: six
 Encoding: 54 54 61
 Width: 16
 Flags: W
-TtInstrs:
-PUSHW_3
- 2
- 21
- 3
-CALL
-NPUSHW
- 27
- 22
- 2
- 38
- 2
- 54
- 2
- 70
- 2
- 86
- 2
- 102
- 2
- 118
- 2
- 134
- 2
- 150
- 2
- 166
- 2
- 182
- 2
- 198
- 2
- 214
- 2
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 2
- 245
- 2
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_1
- 26
-MDAP[rnd]
-PUSHW_3
- 5
- 18
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5126,66 +2142,6 @@ StartChar: quotesingle
 Encoding: 39 39 62
 Width: 5
 Flags: W
-TtInstrs:
-PUSHW_3
- 5
- 1
- 3
-CALL
-NPUSHW
- 5
- 234
- 1
- 250
- 1
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 1
- 41
- 1
- 57
- 1
- 73
- 1
- 89
- 1
- 105
- 1
- 121
- 1
- 137
- 1
- 153
- 1
- 169
- 1
- 185
- 1
- 201
- 1
- 217
- 1
- 13
-DELTAP1
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 8
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 2
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5204,31 +2160,6 @@ StartChar: seven
 Encoding: 55 55 63
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_3
- 10
- 11
- 3
-CALL
-PUSHW_1
- 11
-SRP0
-PUSHW_1
- 5
-MDRP[rp0,grey]
-PUSHW_1
- 10
-SRP0
-PUSHW_1
- 8
-MDRP[rp0,min,rnd,grey]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5253,147 +2184,6 @@ StartChar: eight
 Encoding: 56 56 64
 Width: 16
 Flags: W
-TtInstrs:
-PUSHW_1
- 40
-MDAP[rnd]
-PUSHW_1
- 6
-MDAP[rnd]
-PUSHW_1
- 40
-SRP0
-PUSHW_1
- 20
-MDRP[rp0,grey]
-PUSHW_1
- 20
-MDAP[rnd]
-PUSHW_1
- 12
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 12
- 38
- 12
- 54
- 12
- 70
- 12
- 86
- 12
- 102
- 12
- 118
- 12
- 134
- 12
- 150
- 12
- 166
- 12
- 182
- 12
- 198
- 12
- 214
- 12
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 12
- 245
- 12
- 2
-DELTAP1
-PUSHW_1
- 1
-MDRP[rp0,grey]
-NPUSHW
- 5
- 234
- 6
- 250
- 6
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 6
- 41
- 6
- 57
- 6
- 73
- 6
- 89
- 6
- 105
- 6
- 121
- 6
- 137
- 6
- 153
- 6
- 169
- 6
- 185
- 6
- 201
- 6
- 217
- 6
- 13
-DELTAP1
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 15
-MDRP[rp0,grey]
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 17
-MDRP[rp0,grey]
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 32
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 26
-MDRP[rp0,grey]
-PUSHW_1
- 20
-SRP0
-PUSHW_1
- 37
-MDRP[rp0,grey]
-PUSHW_1
- 32
-SRP0
-PUSHW_1
- 41
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 23
-MDAP[rnd]
-PUSHW_1
- 34
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5447,71 +2237,6 @@ StartChar: nine
 Encoding: 57 57 65
 Width: 17
 Flags: W
-TtInstrs:
-PUSHW_3
- 25
- 8
- 3
-CALL
-NPUSHW
- 5
- 234
- 8
- 250
- 8
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 8
- 41
- 8
- 57
- 8
- 73
- 8
- 89
- 8
- 105
- 8
- 121
- 8
- 137
- 8
- 153
- 8
- 169
- 8
- 185
- 8
- 201
- 8
- 217
- 8
- 13
-DELTAP1
-PUSHW_1
- 25
-SRP0
-PUSHW_1
- 32
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 29
-MDAP[rnd]
-PUSHW_1
- 21
-MDAP[rnd]
-PUSHW_3
- 7
- 15
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5555,14 +2280,6 @@ StartChar: zero
 Encoding: 48 48 66
 Width: 20
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 18
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5599,17 +2316,6 @@ StartChar: colon
 Encoding: 58 58 67
 Width: 5
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_1
- 8
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5638,68 +2344,6 @@ StartChar: semicolon
 Encoding: 59 59 68
 Width: 6
 Flags: W
-TtInstrs:
-PUSHW_3
- 6
- 2
- 3
-CALL
-NPUSHW
- 5
- 234
- 2
- 250
- 2
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 2
- 41
- 2
- 57
- 2
- 73
- 2
- 89
- 2
- 105
- 2
- 121
- 2
- 137
- 2
- 153
- 2
- 169
- 2
- 185
- 2
- 201
- 2
- 217
- 2
- 13
-DELTAP1
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 20
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_3
- 11
- 8
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5731,68 +2375,6 @@ StartChar: comma
 Encoding: 44 44 69
 Width: 6
 Flags: W
-TtInstrs:
-PUSHW_3
- 10
- 5
- 3
-CALL
-NPUSHW
- 5
- 234
- 5
- 250
- 5
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 5
- 41
- 5
- 57
- 5
- 73
- 5
- 89
- 5
- 105
- 5
- 121
- 5
- 137
- 5
- 153
- 5
- 169
- 5
- 185
- 5
- 201
- 5
- 217
- 5
- 13
-DELTAP1
-PUSHW_1
- 10
-SRP0
-PUSHW_1
- 12
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_3
- 3
- 0
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5815,70 +2397,6 @@ StartChar: exclam
 Encoding: 33 33 70
 Width: 6
 Flags: W
-TtInstrs:
-PUSHW_3
- 6
- 2
- 3
-CALL
-NPUSHW
- 27
- 22
- 6
- 38
- 6
- 54
- 6
- 70
- 6
- 86
- 6
- 102
- 6
- 118
- 6
- 134
- 6
- 150
- 6
- 166
- 6
- 182
- 6
- 198
- 6
- 214
- 6
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 6
- 245
- 6
- 2
-DELTAP1
-PUSHW_3
- 14
- 2
- 6
-SRP1
-SRP2
-IP
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 18
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5908,27 +2426,6 @@ StartChar: hyphen
 Encoding: 45 45 71
 Width: 7
 Flags: W
-TtInstrs:
-PUSHW_3
- 1
- 0
- 3
-CALL
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 5
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_3
- 1
- 2
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -5944,51 +2441,6 @@ StartChar: plus
 Encoding: 43 43 72
 Width: 15
 Flags: W
-TtInstrs:
-PUSHW_3
- 4
- 1
- 3
-CALL
-PUSHW_1
- 4
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,grey]
-PUSHW_1
- 1
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 2
-MDAP[rnd]
-PUSHW_3
- 5
- 6
- 3
-CALL
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 6
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,grey]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6012,21 +2464,6 @@ StartChar: equal
 Encoding: 61 61 73
 Width: 13
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_3
- 7
- 4
- 3
-CALL
-PUSHW_3
- 3
- 0
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6054,24 +2491,6 @@ StartChar: egrave
 Encoding: 232 232 75
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_3
- 10
- 18
- 4
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6114,24 +2533,6 @@ StartChar: eacute
 Encoding: 233 233 76
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_3
- 10
- 18
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6174,24 +2575,6 @@ StartChar: ecircumflex
 Encoding: 234 234 77
 Width: 15
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 19
-MDAP[rnd]
-PUSHW_3
- 11
- 19
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6235,79 +2618,6 @@ StartChar: igrave
 Encoding: 236 236 78
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 0
- 5
- 3
-CALL
-NPUSHW
- 5
- 234
- 5
- 250
- 5
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 5
- 41
- 5
- 57
- 5
- 73
- 5
- 89
- 5
- 105
- 5
- 121
- 5
- 137
- 5
- 153
- 5
- 169
- 5
- 185
- 5
- 201
- 5
- 217
- 5
- 13
-DELTAP1
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 7
-MDRP[rp0,grey]
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_3
- 7
- 9
- 4
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6333,35 +2643,6 @@ StartChar: iacute
 Encoding: 237 237 79
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 7
- 5
- 3
-CALL
-PUSHW_1
- 5
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,grey]
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 9
-MDAP[rnd]
-PUSHW_3
- 7
- 9
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6387,29 +2668,6 @@ StartChar: icircumflex
 Encoding: 238 238 80
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 8
- 13
- 3
-CALL
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 10
-MDAP[rnd]
-PUSHW_3
- 8
- 10
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6436,126 +2694,6 @@ StartChar: idieresis
 Encoding: 239 239 81
 Width: 9
 Flags: W
-TtInstrs:
-PUSHW_3
- 8
- 12
- 3
-CALL
-PUSHW_3
- 2
- 4
- 3
-CALL
-NPUSHW
- 5
- 234
- 4
- 250
- 4
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 4
- 41
- 4
- 57
- 4
- 73
- 4
- 89
- 4
- 105
- 4
- 121
- 4
- 137
- 4
- 153
- 4
- 169
- 4
- 185
- 4
- 201
- 4
- 217
- 4
- 13
-DELTAP1
-NPUSHW
- 27
- 22
- 8
- 38
- 8
- 54
- 8
- 70
- 8
- 86
- 8
- 102
- 8
- 118
- 8
- 134
- 8
- 150
- 8
- 166
- 8
- 182
- 8
- 198
- 8
- 214
- 8
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 8
- 245
- 8
- 2
-DELTAP1
-PUSHW_1
- 8
-SRP0
-PUSHW_1
- 6
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 15
-MDRP[rp0,grey]
-PUSHW_1
- 8
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 22
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 17
-MDAP[rnd]
-PUSHW_3
- 0
- 3
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6590,80 +2728,6 @@ StartChar: ae
 Encoding: 230 230 82
 Width: 22
 Flags: W
-TtInstrs:
-PUSHW_3
- 37
- 22
- 3
-CALL
-NPUSHW
- 27
- 22
- 37
- 38
- 37
- 54
- 37
- 70
- 37
- 86
- 37
- 102
- 37
- 118
- 37
- 134
- 37
- 150
- 37
- 166
- 37
- 182
- 37
- 198
- 37
- 214
- 37
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 37
- 245
- 37
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_1
- 0
-MDAP[rnd]
-PUSHW_1
- 3
-MDAP[rnd]
-PUSHW_1
- 15
-MDAP[rnd]
-PUSHW_1
- 20
-MDAP[rnd]
-PUSHW_3
- 7
- 15
- 0
-SRP1
-SRP2
-IP
-PUSHW_3
- 23
- 15
- 0
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6719,62 +2783,6 @@ StartChar: ccedilla
 Encoding: 231 231 83
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_3
- 25
- 13
- 3
-CALL
-NPUSHW
- 27
- 22
- 25
- 38
- 25
- 54
- 25
- 70
- 25
- 86
- 25
- 102
- 25
- 118
- 25
- 134
- 25
- 150
- 25
- 166
- 25
- 182
- 25
- 198
- 25
- 214
- 25
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 25
- 245
- 25
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_3
- 1
- 2
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6820,70 +2828,6 @@ StartChar: agrave
 Encoding: 224 224 84
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_3
- 27
- 17
- 3
-CALL
-NPUSHW
- 27
- 22
- 27
- 38
- 27
- 54
- 27
- 70
- 27
- 86
- 27
- 102
- 27
- 118
- 27
- 134
- 27
- 150
- 27
- 166
- 27
- 182
- 27
- 198
- 27
- 214
- 27
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 27
- 245
- 27
- 2
-DELTAP1
-SVTCA[y-axis]
-PUSHW_1
- 4
-MDAP[rnd]
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_1
- 15
-MDAP[rnd]
-PUSHW_3
- 18
- 12
- 4
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -6928,127 +2872,6 @@ StartChar: aacute
 Encoding: 225 225 85
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_1
- 31
-MDAP[rnd]
-PUSHW_1
- 7
-MDAP[rnd]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 11
-MDRP[rp0,grey]
-PUSHW_1
- 11
-MDAP[rnd]
-PUSHW_1
- 21
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 21
- 38
- 21
- 54
- 21
- 70
- 21
- 86
- 21
- 102
- 21
- 118
- 21
- 134
- 21
- 150
- 21
- 166
- 21
- 182
- 21
- 198
- 21
- 214
- 21
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 21
- 245
- 21
- 2
-DELTAP1
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 3
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 9
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 13
-MDRP[rp0,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 16
-MDRP[rp0,grey]
-PUSHW_1
- 11
-SRP0
-PUSHW_1
- 18
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 25
-MDRP[rp0,grey]
-PUSHW_1
- 7
-SRP0
-PUSHW_1
- 26
-MDRP[rp0,grey]
-PUSHW_1
- 3
-SRP0
-PUSHW_1
- 32
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 26
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -7093,128 +2916,6 @@ StartChar: acircumflex
 Encoding: 226 226 86
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_1
- 32
-MDAP[rnd]
-PUSHW_1
- 14
-MDAP[rnd]
-PUSHW_1
- 32
-SRP0
-PUSHW_1
- 18
-MDRP[rp0,grey]
-PUSHW_1
- 18
-MDAP[rnd]
-PUSHW_1
- 28
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 28
- 38
- 28
- 54
- 28
- 70
- 28
- 86
- 28
- 102
- 28
- 118
- 28
- 134
- 28
- 150
- 28
- 166
- 28
- 182
- 28
- 198
- 28
- 214
- 28
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 28
- 245
- 28
- 2
-DELTAP1
-PUSHW_1
- 7
-MDRP[rp0,grey]
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 28
-SRP0
-PUSHW_1
- 16
-MDRP[rp0,grey]
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 20
-MDRP[rp0,grey]
-PUSHW_1
- 28
-SRP0
-PUSHW_1
- 23
-MDRP[rp0,grey]
-PUSHW_1
- 18
-SRP0
-PUSHW_1
- 25
-MDRP[rp0,grey]
-PUSHW_1
- 14
-SRP0
-PUSHW_1
- 26
-MDRP[rp0,grey]
-PUSHW_1
- 10
-SRP0
-PUSHW_1
- 33
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 13
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_3
- 19
- 13
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -7260,184 +2961,6 @@ StartChar: atilde
 Encoding: 227 227 87
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_1
- 35
-MDAP[rnd]
-PUSHW_1
- 0
-MDAP[rnd]
-NPUSHW
- 5
- 234
- 0
- 250
- 0
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 0
- 41
- 0
- 57
- 0
- 73
- 0
- 89
- 0
- 105
- 0
- 121
- 0
- 137
- 0
- 153
- 0
- 169
- 0
- 185
- 0
- 201
- 0
- 217
- 0
- 13
-DELTAP1
-PUSHW_1
- 2
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 35
-SRP0
-PUSHW_1
- 21
-MDRP[rp0,grey]
-PUSHW_1
- 21
-MDAP[rnd]
-PUSHW_1
- 31
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 31
- 38
- 31
- 54
- 31
- 70
- 31
- 86
- 31
- 102
- 31
- 118
- 31
- 134
- 31
- 150
- 31
- 166
- 31
- 182
- 31
- 198
- 31
- 214
- 31
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 31
- 245
- 31
- 2
-DELTAP1
-PUSHW_1
- 8
-MDRP[rp0,grey]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 12
-MDRP[rp0,grey]
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 17
-MDRP[rp0,grey]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,grey]
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 23
-MDRP[rp0,grey]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 26
-MDRP[rp0,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 28
-MDRP[rp0,grey]
-PUSHW_1
- 0
-SRP0
-PUSHW_1
- 29
-MDRP[rp0,grey]
-PUSHW_1
- 2
-SRP0
-PUSHW_1
- 36
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 1
-MDAP[rnd]
-PUSHW_1
- 8
-MDAP[rnd]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_1
- 19
-MDAP[rnd]
-PUSHW_3
- 22
- 16
- 1
-SRP1
-SRP2
-IP
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -7486,146 +3009,6 @@ StartChar: adieresis
 Encoding: 228 228 88
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_3
- 35
- 25
- 3
-CALL
-PUSHW_3
- 2
- 4
- 3
-CALL
-NPUSHW
- 5
- 234
- 4
- 250
- 4
- 2
-DELTAP1
-NPUSHW
- 27
- 25
- 4
- 41
- 4
- 57
- 4
- 73
- 4
- 89
- 4
- 105
- 4
- 121
- 4
- 137
- 4
- 153
- 4
- 169
- 4
- 185
- 4
- 201
- 4
- 217
- 4
- 13
-DELTAP1
-NPUSHW
- 27
- 22
- 35
- 38
- 35
- 54
- 35
- 70
- 35
- 86
- 35
- 102
- 35
- 118
- 35
- 134
- 35
- 150
- 35
- 166
- 35
- 182
- 35
- 198
- 35
- 214
- 35
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 35
- 245
- 35
- 2
-DELTAP1
-PUSHW_3
- 12
- 25
- 35
-SRP1
-SRP2
-IP
-PUSHW_1
- 12
-MDAP[rnd]
-PUSHW_1
- 8
-MDRP[rp0,min,rnd,grey]
-PUSHW_3
- 28
- 4
- 2
-SRP1
-SRP2
-IP
-PUSHW_1
- 28
-MDAP[rnd]
-PUSHW_1
- 16
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 28
-SRP0
-PUSHW_1
- 33
-MDRP[rp0,grey]
-PUSHW_1
- 16
-SRP0
-PUSHW_1
- 40
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 20
-MDAP[rnd]
-PUSHW_1
- 23
-MDAP[rnd]
-PUSHW_3
- 0
- 3
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -7679,135 +3062,6 @@ StartChar: aring
 Encoding: 229 229 89
 Width: 14
 Flags: W
-TtInstrs:
-PUSHW_1
- 35
-MDAP[rnd]
-PUSHW_1
- 24
-MDAP[rnd]
-PUSHW_1
- 35
-SRP0
-PUSHW_1
- 21
-MDRP[rp0,grey]
-PUSHW_1
- 21
-MDAP[rnd]
-PUSHW_1
- 31
-MDRP[rp0,min,rnd,grey]
-NPUSHW
- 27
- 22
- 31
- 38
- 31
- 54
- 31
- 70
- 31
- 86
- 31
- 102
- 31
- 118
- 31
- 134
- 31
- 150
- 31
- 166
- 31
- 182
- 31
- 198
- 31
- 214
- 31
- 13
-DELTAP1
-NPUSHW
- 5
- 229
- 31
- 245
- 31
- 2
-DELTAP1
-PUSHW_1
- 0
-MDRP[rp0,grey]
-PUSHW_1
- 24
-SRP0
-PUSHW_1
- 2
-MDRP[rp0,grey]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 10
-MDRP[rp0,grey]
-PUSHW_1
- 24
-SRP0
-PUSHW_1
- 12
-MDRP[rp0,min,rnd,grey]
-PUSHW_1
- 24
-SRP0
-PUSHW_1
- 17
-MDRP[rp0,grey]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 19
-MDRP[rp0,grey]
-PUSHW_1
- 31
-SRP0
-PUSHW_1
- 26
-MDRP[rp0,grey]
-PUSHW_1
- 21
-SRP0
-PUSHW_1
- 28
-MDRP[rp0,grey]
-PUSHW_1
- 24
-SRP0
-PUSHW_1
- 29
-MDRP[rp0,grey]
-PUSHW_1
- 12
-SRP0
-PUSHW_1
- 36
-MDRP[rp0,min,rnd,grey]
-SVTCA[y-axis]
-PUSHW_1
- 16
-MDAP[rnd]
-PUSHW_1
- 19
-MDAP[rnd]
-PUSHW_3
- 9
- 5
- 3
-CALL
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -7857,14 +3111,6 @@ StartChar: slash
 Encoding: 47 47 90
 Width: 8
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 2
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
@@ -7880,14 +3126,6 @@ StartChar: ampersand
 Encoding: 38 38 91
 Width: 19
 Flags: W
-TtInstrs:
-SVTCA[y-axis]
-PUSHW_1
- 35
-MDAP[rnd]
-IUP[y]
-IUP[x]
-EndTTInstrs
 LayerCount: 2
 Fore
 SplineSet
